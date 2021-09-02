@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DOM elements manipulation</title>
+
+        <link rel="stylesheet" href="bundle.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="container">
+            <form id="add-form" class="mt-2">
+                <div class="row">
+                    <div class="col-md-12 my-md-1 col-lg-3">
+                        <input id="brand-input" placeholder="Brand" class="form-control"/>
+                    </div>
+                    <div class="error"></div>
+                    <div class="col-md-12 my-md-1 col-lg-3">
+                        <input id="model-input"  placeholder="Model" class="form-control"/>
+                    </div>
+
+                    <div class="col-md-12 my-md-1 col-lg-3">
+                        <input id="course-input" placeholder="Course" class="form-control" type="number"/>
+                    </div>
+
+                    <div class="col-md-12 my-md-1 col-lg-3">
+                        <input id="price-input" placeholder="Price" class="form-control" type="number"/>
+                    </div>
+
+                </div>
+                <div class="row my-1">
+                    <div class="col-md-12 my-md-1 col-lg-3">
+                        <select id="type-select" class="form-control">
+                            <option value="Truck">Truck</option>
+                            <option value="Car">Car</option>
+                            <option value="Motor">Motor</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 my-md-1 col-lg-3">
+                        <select id="condition-select" class="form-control">
+                            <option value="New">New</option>
+                            <option value="Used">Used</option>
+                            <option value="Wrecked">Wrecked</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 my-md-1 col-lg-2 offset-lg-4">
+                        <button id="add-vehicle-button" class="btn btn-success float-end w-100" type="submit">Add <i class="fas fa-plus-circle"></i></button>
+                    </div>
+                </div>
+            </form>
+            <div id="summary"></div>
+            <div id="main-content"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="bundle.js"></script>
+    </body>
+</html>
